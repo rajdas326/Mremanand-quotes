@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premanand Maharaj Ji Quotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
+    <meta property="og:title" content="Premanand Maharaj Ji Quotes">
+    <meta property="og:description" content="Wisdom & Spiritual Quotes by Premanand Maharaj Ji">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1598901847919-b95dd0fabde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+    <meta property="og:url" content="https://premanandmaharaj.org">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        :root {
+            --primary-color: #e0c3a0;
+            --secondary-color: #f0d8b8;
+            --text-color: #4a4a4a;
+            --bg-color: #f8f4f1;
+            --card-bg: #fff;
+            --header-overlay: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+        }
+
+        .dark-mode {
+            --primary-color: #bb9977;
+            --secondary-color: #8a7259;
+            --text-color: #e0e0e0;
+            --bg-color: #303030;
+            --card-bg: #404040;
+            --header-overlay: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .app-container {
+            width: 100%;
+            margin: 0;
+            background: var(--card-bg);
+            min-height: 100vh;
+            position: relative;
+            transition: background-color 0.3s;
+            padding-bottom: 70px; /* Fixed space for the bottom nav */
+        }
+        
+        .category-container {
+            overflow-x: auto;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+            width: 100%;
+        }
+        
+        .category-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+        
+        .quote-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, background-color 0.3s;
+        }
+        
+        .quote-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .quote-text {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .quote-text:before {
+            content: '"';
+            font-size: 40px;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            top: -10px;
+        }
+        
+        .bottom-nav {
+            box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            border-top: 1px solid #f2f2f2;
+            background-color: var(--card-bg);
+            transition: background-color 0.3s;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category-btn {
+            min-width: 120px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .category-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .header-image {
+            background-image: url('https://images.unsplash.com/photo-1598901847919-b95dd0fabde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 180px;
+            position: relative;
+            width: 100%;
+        }
+        
+        .header-overlay {
+            position: absolute;
+            background: var(--header-overlay);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        
+        .search-container {
+            position: relative;
+            margin: 15px 0;
+            width: 100%;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 10px 15px 10px 40px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            transition: all 0.3s;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animated-item {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        .favorite-btn.active i {
+            animation: heartBeat 0.5s ease;
+        }
+        
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: var(--primary-color);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .toast {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .show-toast {
+            opacity: 1;
+        }
+        
+        .share-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .share-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .share-content {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            transform: scale(0.9);
+            transition: transform 0.3s;
+        }
+        
+        .share-modal.active .share-content {
+            transform: scale(1);
+        }
+        
+        .social-share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .social-share-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        #random-btn {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 90;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        
+        #random-btn:hover {
+            transform: scale(1.1);
+            background-color: var(--secondary-color);
+        }
+        
+        .quote-details {
+            display: none;
+            padding: 15px;
+            background-color: rgba(0,0,0,0.03);
+            border-radius: 0 0 10px 10px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .quote-details.visible {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+        
+        .nav-btn {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #888;
+            font-size: 0.75rem;
+        }
+        
+        .nav-btn.active {
+            color: var(--primary-color);
+        }
+        
+        .image-quote-card {
+            position: relative;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .image-quote-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            color: white;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        
+        .video-info {
+            padding: 10px 0;
+        }
+
+        /* For consistent tab layout */
+        .tab-content {
+            display: none;
+            width: 100%;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        /* Prevent bottom nav shifting */
+        .bottom-nav {
+            justify-content: space-around;
+        }
+        
+        .bottom-nav .nav-btn {
+            padding: 8px 4px;
+            width: 25%;
+            text-align: center;
+        }
+
+        /* Enhanced sharing functionality */
+        .share-preview {
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .share-preview-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .share-preview-video-thumb {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            position: relative;
+        }
+
+        .share-preview-video-thumb::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .video-play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            z-index: 5;
+        }
+
+        .share-preview-text {
+            padding: 15px;
+            background: #f8f8f8;
+            font-size: 14px;
+        }
+
+        .share-preview-branding {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background: white;
+            border-top: 1px solid #eee;
+        }
+
+        .share-preview-branding img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .share-options-title {
+            font-weight: 500;
+            margin: 20px 0 10px;
+            text-align: center;
+        }
+
+        .share-fallback-message {
+            font-size: 13px;
+            color: #666;
+            margin: 15px 0;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 5px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .share-instruction {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        /* Fix for scrollbar issues */
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Make containers take full width */
+        #main-content, 
+        #favorites-container, 
+        #image-quotes-container, 
+        #video-quotes-container,
+        .category-container,
+        .px-4 {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Ensure all flex containers respect the 100% width */
+        .flex {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        
+        <!-- App Header -->
+        <div class="header-image">
+            <div class="header-overlay">
+                <h1 class="text-white text-3xl font-bold mb-1">Premanand Maharaj Ji</h1>
+                <p class="text-white text-sm mb-2">Wisdom & Spiritual Quotes</p>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="px-4 pt-3 bg-white dark:bg-gray-800" id="search-bar-container">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" id="search-input" placeholder="Search quotes...">
+            </div>
+        </div>
+
+        <!-- Category Navigation -->
+        <div class="category-container px-4 py-3 bg-white sticky top-0 z-50" id="category-container">
+            <div class="flex space-x-2">
+                <button class="category-btn active px-4 py-2 rounded-full text-sm font-medium" data-category="all">All</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="spirituality">Spirituality</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="meditation">Meditation</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="peace">Peace</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="devotion">Devotion</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="knowledge">Knowledge</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="truth">Truth</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="happiness">Happiness</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="service">Service</button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100" data-category="love">Love</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="tab-content active" id="home-content">
+            <div class="p-4" id="main-content">
+                <!-- Content will be dynamically generated -->
+                <div class="loading-spinner" id="main-loader"></div>
+            </div>
+        </div>
+
+        <!-- Favorites Content -->
+        <div class="tab-content" id="favorites-content">
+            <div class="p-4" id="favorites-container">
+                <!-- Favorites will be dynamically generated -->
+                <div class="loading-spinner" id="favorites-loader"></div>
+            </div>
+        </div>
+
+        <!-- Image Quotes Content -->
+        <div class="tab-content" id="image-quotes-content">
+            <div class="p-4">
+                <h2 class="section-title text-xl font-semibold mb-4">Quotes with Images</h2>
+                <div class="image-quotes-container" id="image-quotes-container">
+                    <div class="loading-spinner" id="image-quotes-loader"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Quotes Content -->
+        <div class="tab-content" id="video-quotes-content">
+            <div class="p-4">
+                <h2 class="section-title text-xl font-semibold mb-4">Quotes with Videos</h2>
+                <div class="video-quotes-container" id="video-quotes-container">
+                    <div class="loading-spinner" id="video-quotes-loader"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Random Quote Button -->
+        <div id="random-btn">
+            <i class="fas fa-random fa-lg"></i>
+        </div>
+
+        <!-- Bottom Navigation - Fixed position -->
+        <div class="bottom-nav">
+            <div class="nav-btn active" id="home-btn">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </div>
+            <div class="nav-btn" id="favorites-btn">
+                <i class="far fa-heart text-xl"></i>
+                <span class="text-xs mt-1">Favorites</span>
+            </div>
+            <div class="nav-btn" id="image-quotes-btn">
+                <i class="far fa-image text-xl"></i>
+                <span class="text-xs mt-1">Images</span>
+            </div>
+            <div class="nav-btn" id="video-quotes-btn">
+                <i class="fas fa-video text-xl"></i>
+                <span class="text-xs mt-1">Videos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Quote added to favorites!</div>
+
+    <!-- Enhanced Share Modal -->
+    <div class="share-modal" id="share-modal">
+        <div class="share-content">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="font-medium">Share Quote</h3>
+                <button id="close-share" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Share Preview -->
+            <div id="share-preview"></div>
+            
+            <div class="share-options-title">Share via</div>
+            <div class="flex justify-center my-4">
+                <div class="social-share-btn bg-blue-600 text-white" data-platform="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-share-btn bg-blue-400 text-white" data-platform="twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social-share-btn bg-green-500 text-white" data-platform="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="social-share-btn bg-blue-700 text-white" data-platform="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            
+            <div class="share-fallback-message" id="share-fallback-message"></div>
+            
+            <button id="copy-quote" class="w-full py-2 bg-gray-200 hover:bg-gray-300 rounded-lg text-center text-sm font-medium transition">
+                Copy to Clipboard
+            </button>
+            <p class="share-instruction">You can also use your browser's share function or take a screenshot</p>
+        </div>
+    </div>
+
+    <script>
+        // Data: Quotes by Premanand Maharaj Ji
+        const quotes = [
+            {
+                id: 1,
+                text: "The greatest wealth is inner peace and contentment. It cannot be stolen, and it cannot be destroyed.",
+                category: "peace",
+                isPopular: true
+            },
+            {
+                id: 2,
+                text: "True meditation is becoming one with the divine. Where you end, divinity begins.",
+                category: "meditation",
+                isPopular: true
+            },
+            {
+                id: 3,
+                text: "The path to God is not outside but within you. Seek inside and you shall find the eternal truth.",
+                category: "spirituality",
+                isPopular: true
+            },
+            {
+                id: 4,
+                text: "Service to humanity is service to God. When you help others, you are serving the divine presence in them.",
+                category: "service",
+                isPopular: true
+            },
+            {
+                id: 5,
+                text: "Knowledge without practice is like a book that is never read.",
+                category: "knowledge"
+            },
+            {
+                id: 6,
+                text: "Be like water - adaptable, flexible, and flowing around obstacles.",
+                category: "peace"
+            },
+            {
+                id: 7,
+                text: "True happiness comes from a heart that knows gratitude and contentment.",
+                category: "happiness"
+            },
+            {
+                id: 8,
+                text: "Love is not an emotion; it is your very existence. It is not something you do; it is what you are.",
+                category: "love"
+            },
+            {
+                id: 9,
+                text: "The mind is like water, when it's turbulent, it's difficult to see. When it's calm, everything becomes clear.",
+                category: "meditation"
+            },
+            {
+                id: 10,
+                text: "Devotion is not just worship; it is a complete surrender of the ego to the divine will.",
+                category: "devotion"
+            },
+            {
+                id: 11,
+                text: "Truth is not what you believe; it is what you experience. Experience the divine directly.",
+                category: "truth"
+            },
+            {
+                id: 12,
+                text: "Your thoughts shape your reality. Guard them with the same care as you would guard a precious treasure.",
+                category: "spirituality"
+            },
+            {
+                id: 13,
+                text: "The purpose of spiritual practices is not to reach God, but to remove the obstacles that prevent you from recognizing that you are already one with God.",
+                category: "spirituality"
+            },
+            {
+                id: 14,
+                text: "Happiness is not found in external achievements but in internal peace.",
+                category: "happiness"
+            },
+            {
+                id: 15,
+                text: "The highest form of love is to love without condition, without expectation, and without reservation.",
+                category: "love"
+            },
+            {
+                id: 16,
+                text: "When you serve others with a pure heart, you are not doing them a favor; you are doing yourself a favor.",
+                category: "service"
+            },
+            {
+                id: 17,
+                text: "True knowledge is not information; it is transformation.",
+                category: "knowledge"
+            },
+            {
+                id: 18,
+                text: "Prayer is not asking; it is a longing of the soul. It is daily admission of one's weakness.",
+                category: "devotion"
+            },
+            {
+                id: 19,
+                text: "Peace begins where expectation ends.",
+                category: "peace"
+            },
+            {
+                id: 20,
+                text: "Meditation is not a means to an end. It is both the means and the end.",
+                category: "meditation"
+            },
+            {
+                id: 21,
+                text: "Truth is simple, but the moment you try to explain it, it becomes complicated.",
+                category: "truth"
+            },
+            {
+                id: 22,
+                text: "The greatest service you can do for others is to awaken them to their true nature.",
+                category: "service"
+            },
+            {
+                id: 23,
+                text: "Love is the bridge between you and everything.",
+                category: "love"
+            },
+            {
+                id: 24,
+                text: "The quieter you become, the more you can hear.",
+                category: "meditation"
+            },
+            {
+                id: 25,
+                text: "Happiness is when what you think, what you say, and what you do are in harmony.",
+                category: "happiness"
+            },
+            {
+                id: 26,
+                text: "Knowledge becomes wisdom only after it is put into practice.",
+                category: "knowledge"
+            },
+            {
+                id: 27,
+                text: "Devotion is the dissolution of the self in the sea of divine love.",
+                category: "devotion"
+            },
+            {
+                id: 28,
+                text: "In the depth of silence, you will find the language of God.",
+                category: "spirituality"
+            },
+            {
+                id: 29,
+                text: "Real peace is not the absence of conflict; it is the presence of divine harmony despite the conflict.",
+                category: "peace"
+            },
+            {
+                id: 30,
+                text: "Truth doesn't need defense; it needs to be lived.",
+                category: "truth"
+            }
+        ];
+
+        // Image Quotes Data
+        const imageQuotes = [
+            {
+                id: 101,
+                text: "Meditation is the dissolution of thoughts in eternal awareness or pure consciousness without objectification.",
+                category: "meditation",
+                image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 102,
+                text: "The divine light is always there; it is you who have closed your eyes.",
+                category: "spirituality",
+                image: "https://images.unsplash.com/photo-1518002171953-a080ee817e1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 103,
+                text: "Peace comes from within. Do not seek it without.",
+                category: "peace",
+                image: "https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 104,
+                text: "Love is the most powerful force in the universe. It breaks all boundaries and transcends all limitations.",
+                category: "love",
+                image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 105,
+                text: "Service to others is the rent you pay for your room here on earth.",
+                category: "service",
+                image: "https://images.unsplash.com/photo-1469571486292-b53601010b89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 106,
+                text: "Truth is one, paths are many.",
+                category: "truth",
+                image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            }
+        ];
+
+        // Video Quotes Data
+        const videoQuotes = [
+            {
+                id: 201,
+                text: "The journey of self-discovery is the most sacred pilgrimage one can undertake.",
+                category: "spirituality",
+                videoSrc: "https://cdn.jsdelivr.net/gh/genspark-c5-resources/website-resources@main/videos/meditation.mp4",
+                thumbnail: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 202,
+                text: "In silence, we find the answers that noise cannot reveal.",
+                category: "meditation",
+                videoSrc: "https://cdn.jsdelivr.net/gh/genspark-c5-resources/website-resources@main/videos/nature.mp4",
+                thumbnail: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 203,
+                text: "Devotion is the highest form of love, where the devotee disappears and only the divine remains.",
+                category: "devotion",
+                videoSrc: "https://cdn.jsdelivr.net/gh/genspark-c5-resources/website-resources@main/videos/river.mp4",
+                thumbnail: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                id: 204,
+                text: "True happiness is found not in possessions but in the quality of our consciousness.",
+                category: "happiness",
+                videoSrc: "https://cdn.jsdelivr.net/gh/genspark-c5-resources/website-resources@main/videos/sunset.mp4",
+                thumbnail: "https://images.unsplash.com/photo-1530973428-5bf2db2e4d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            }
+        ];
+
+        // DOM Elements
+        const mainContent = document.getElementById('main-content');
+        const favoritesContainer = document.getElementById('favorites-container');
+        const imageQuotesContainer = document.getElementById('image-quotes-container');
+        const videoQuotesContainer = document.getElementById('video-quotes-container');
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const searchInput = document.getElementById('search-input');
+        const homeBtn = document.getElementById('home-btn');
+        const favoritesBtn = document.getElementById('favorites-btn');
+        const imageQuotesBtn = document.getElementById('image-quotes-btn');
+        const videoQuotesBtn = document.getElementById('video-quotes-btn');
+        const randomBtn = document.getElementById('random-btn');
+        const themeToggle = document.getElementById('theme-toggle');
+        const toast = document.getElementById('toast');
+        const shareModal = document.getElementById('share-modal');
+        const closeShareBtn = document.getElementById('close-share');
+        const sharePreview = document.getElementById('share-preview');
+        const shareFallbackMessage = document.getElementById('share-fallback-message');
+        const copyQuoteBtn = document.getElementById('copy-quote');
+        const socialShareBtns = document.querySelectorAll('.social-share-btn');
+        const mainLoader = document.getElementById('main-loader');
+        const favoritesLoader = document.getElementById('favorites-loader');
+        const imageQuotesLoader = document.getElementById('image-quotes-loader');
+        const videoQuotesLoader = document.getElementById('video-quotes-loader');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        // State
+        let currentCategory = 'all';
+        let currentView = 'home';
+        let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+        let currentShareQuote = '';
+        let currentShareMedia = null;
+        let currentShareMediaType = 'text'; // 'text', 'image', or 'video'
+        let isDarkMode = localStorage.getItem('darkMode') === 'true';
+        let isSearching = false;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Apply dark mode if saved
+            if (isDarkMode) {
+                document.body.classList.add('dark-mode');
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+            
+            // Simulate loading
+            setTimeout(() => {
+                renderHome();
+            }, 800);
+        });
+
+        // Event Listeners
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                currentCategory = this.getAttribute('data-category');
+                
+                if (currentView === 'home') {
+                    renderFilteredQuotes();
+                } else if (currentView === 'favorites') {
+                    renderFavorites();
+                } else if (currentView === 'image-quotes') {
+                    renderImageQuotes();
+                } else if (currentView === 'video-quotes') {
+                    renderVideoQuotes();
+                }
+            });
+        });
+
+        homeBtn.addEventListener('click', function() {
+            switchTab('home');
+        });
+
+        favoritesBtn.addEventListener('click', function() {
+            switchTab('favorites');
+        });
+
+        imageQuotesBtn.addEventListener('click', function() {
+            switchTab('image-quotes');
+        });
+
+        videoQuotesBtn.addEventListener('click', function() {
+            switchTab('video-quotes');
+        });
+
+        searchInput.addEventListener('input', function() {
+            isSearching = this.value.trim() !== '';
+            if (currentView === 'home') {
+                renderFilteredQuotes();
+            } else if (currentView === 'favorites') {
+                renderFavorites();
+            } else if (currentView === 'image-quotes') {
+                renderImageQuotes();
+            } else if (currentView === 'video-quotes') {
+                renderVideoQuotes();
+            }
+        });
+
+        randomBtn.addEventListener('click', showRandomQuote);
+
+        themeToggle.addEventListener('click', function() {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+            
+            if (isDarkMode) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+
+        closeShareBtn.addEventListener('click', function() {
+            shareModal.classList.remove('active');
+        });
+
+        copyQuoteBtn.addEventListener('click', function() {
+            let textToCopy = '';
+            
+            if (currentShareMediaType === 'image' || currentShareMediaType === 'video') {
+                const mediaInfo = currentShareMediaType === 'image' ? 
+                    'Image Quote: View at https://premanandmaharaj.org/quotes/image' : 
+                    'Video Quote: View at https://premanandmaharaj.org/quotes/video';
+                
+                textToCopy = `"${currentShareQuote}" - Premanand Maharaj Ji\n\n${mediaInfo}`;
+            } else {
+                textToCopy = `"${currentShareQuote}" - Premanand Maharaj Ji`;
+            }
+            
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    copyQuoteBtn.textContent = 'Copied!';
+                    setTimeout(() => {
+                        copyQuoteBtn.textContent = 'Copy to Clipboard';
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Could not copy: ', err);
+                    copyQuoteBtn.textContent = 'Failed to copy';
+                    setTimeout(() => {
+                        copyQuoteBtn.textContent = 'Copy to Clipboard';
+                    }, 2000);
+                });
+        });
+
+        socialShareBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const platform = this.getAttribute('data-platform');
+                shareToSocialMedia(platform);
+            });
+        });
+
+        // Helper Functions
+        function switchTab(tab) {
+            if (currentView !== tab) {
+                currentView = tab;
+                
+                // Update nav buttons
+                document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById(`${tab}-btn`).classList.add('active');
+                
+                // Update tab content
+                tabContents.forEach(content => content.classList.remove('active'));
+                document.getElementById(`${tab}-content`).classList.add('active');
+                
+                // Load appropriate content
+                if (tab === 'home') {
+                    renderHome();
+                } else if (tab === 'favorites') {
+                    renderFavorites();
+                } else if (tab === 'image-quotes') {
+                    renderImageQuotes();
+                } else if (tab === 'video-quotes') {
+                    renderVideoQuotes();
+                }
+            }
+        }
+
+        function renderHome() {
+            showLoader();
+            setTimeout(() => {
+                let content = '';
+                
+                // Quote of the Day Section
+                const quotedId = getQuoteOfTheDayId();
+                const quoteOfTheDay = quotes.find(q => q.id === quotedId);
+                
+                content += `
+                    <div class="mb-8 animated-item" style="animation-delay: 0.1s">
+                        <h2 class="section-title text-xl font-semibold mb-4">Quote of the Day</h2>
+                        <div class="quote-card p-6 bg-yellow-50 border-l-4 border-yellow-400">
+                            <p class="quote-text text-lg font-medium mb-3">${quoteOfTheDay.text}</p>
+                            <p class="text-right text-sm text-gray-600">- Premanand Maharaj Ji</p>
+                            <div class="flex justify-end mt-3">
+                                <button class="favorite-btn text-gray-500 hover:text-yellow-600 mr-2 ${isFavorite(quoteOfTheDay.id) ? 'active' : ''}" data-id="${quoteOfTheDay.id}">
+                                    <i class="${isFavorite(quoteOfTheDay.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                                </button>
+                                <button class="share-btn text-gray-500 hover:text-blue-600" data-quote="${quoteOfTheDay.text}" data-type="text">
+                                    <i class="far fa-share-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Popular Quotes Section
+                const popularQuotes = quotes.filter(q => q.isPopular).slice(0, 3);
+                content += `
+                    <div class="mb-8 animated-item" style="animation-delay: 0.2s">
+                        <h2 class="section-title text-xl font-semibold mb-4">Popular Quotes</h2>
+                        <div class="grid grid-cols-1 gap-4">
+                `;
+                
+                popularQuotes.forEach(quote => {
+                    content += createQuoteCard(quote);
+                });
+                
+                content += `
+                        </div>
+                    </div>
+                `;
+                
+                // Categories Section
+                content += `
+                    <div class="mb-8 animated-item" style="animation-delay: 0.3s">
+                        <h2 class="section-title text-xl font-semibold mb-4">Browse by Category</h2>
+                        <div class="grid grid-cols-2 gap-3">
+                `;
+                
+                const categories = [
+                    { name: 'Spirituality', icon: 'fas fa-om', color: 'blue' },
+                    { name: 'Meditation', icon: 'fas fa-pray', color: 'purple' },
+                    { name: 'Peace', icon: 'fas fa-dove', color: 'green' },
+                    { name: 'Love', icon: 'fas fa-heart', color: 'pink' }
+                ];
+                
+                categories.forEach(category => {
+                    const count = quotes.filter(q => q.category.toLowerCase() === category.name.toLowerCase()).length;
+                    content += `
+                        <div class="bg-${category.color}-50 p-4 rounded-lg text-center hover:bg-${category.color}-100 transition cursor-pointer category-card" data-category="${category.name.toLowerCase()}">
+                            <i class="${category.icon} text-${category.color}-500 text-2xl mb-2"></i>
+                            <p class="font-medium">${category.name}</p>
+                            <p class="text-xs text-gray-500">${count} quotes</p>
+                        </div>
+                    `;
+                });
+                
+                content += `
+                        </div>
+                    </div>
+                `;
+                
+                // Media Quotes Preview
+                content += `
+                    <div class="mb-8 animated-item" style="animation-delay: 0.4s">
+                        <h2 class="section-title text-xl font-semibold mb-4">Featured Media Quotes</h2>
+                        <div class="flex space-x-4 overflow-x-auto py-2 scrollbar-hide">
+                            <div class="media-preview-card" style="min-width: 220px; height: 120px; position: relative; border-radius: 10px; overflow: hidden;">
+                                <img src="${imageQuotes[0].image}" alt="Quote Image" style="width: 100%; height: 100%; object-fit: cover;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 8px; color: white;">
+                                    <p class="text-xs">Image Quote</p>
+                                </div>
+                            </div>
+                            <div class="media-preview-card" style="min-width: 220px; height: 120px; position: relative; border-radius: 10px; overflow: hidden;">
+                                <img src="${videoQuotes[0].thumbnail}" alt="Video Quote" style="width: 100%; height: 100%; object-fit: cover;">
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                    <i class="fas fa-play-circle text-white text-3xl"></i>
+                                </div>
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 8px; color: white;">
+                                    <p class="text-xs">Video Quote</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2 mt-4">
+                            <button class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium" id="view-images-btn">
+                                <i class="far fa-image mr-1"></i> View Image Quotes
+                            </button>
+                            <button class="bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium" id="view-videos-btn">
+                                <i class="fas fa-video mr-1"></i> View Video Quotes
+                            </button>
+                        </div>
+                    </div>
+                `;
+                
+                // Recent Quotes Section
+                const recentQuotes = [...quotes].sort(() => 0.5 - Math.random()).slice(0, 3);
+                content += `
+                    <div class="mb-8 animated-item" style="animation-delay: 0.5s">
+                        <h2 class="section-title text-xl font-semibold mb-4">Recent Quotes</h2>
+                        <div class="space-y-4">
+                `;
+                
+                const colors = ['yellow', 'blue', 'green'];
+                recentQuotes.forEach((quote, index) => {
+                    const color = colors[index % colors.length];
+                    content += `
+                        <div class="quote-card p-4 flex">
+                            <div class="bg-${color}-100 text-${color}-500 p-3 rounded-full h-12 w-12 flex items-center justify-center mr-3">
+                                <i class="fas ${index === 0 ? 'fa-lightbulb' : index === 1 ? 'fa-water' : 'fa-smile'}"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm mb-1">"${quote.text}"</p>
+                                <div class="flex justify-between">
+                                    <span class="text-xs text-gray-500">${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</span>
+                                    <button class="favorite-btn text-gray-500 hover:text-yellow-600 text-xs ${isFavorite(quote.id) ? 'active' : ''}" data-id="${quote.id}">
+                                        <i class="${isFavorite(quote.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                content += `
+                        </div>
+                    </div>
+                `;
+                
+                // Daily Practice Section
+                content += `
+                    <div class="mb-8 animated-item" style="animation-delay: 0.6s">
+                        <h2 class="section-title text-xl font-semibold mb-4">Daily Practice</h2>
+                        <div class="bg-indigo-50 p-5 rounded-lg">
+                            <h3 class="font-medium text-lg mb-2">Today's Spiritual Practice</h3>
+                            <p class="text-sm mb-4">"Spend 10 minutes in silence, observing your thoughts without judgment. Let them come and go like clouds in the sky."</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-xs text-gray-600">
+                                    <i class="far fa-clock mr-1"></i> 10 min practice
+                                </div>
+                                <button class="bg-indigo-500 text-white text-sm py-1 px-4 rounded-full hover:bg-indigo-600" id="start-practice-btn">
+                                    Start Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                mainContent.innerHTML = content;
+                hideLoader();
+                
+                // Add event listeners to newly created elements
+                addEventListenersToQuoteCards();
+                
+                // Add event listeners to category cards
+                document.querySelectorAll('.category-card').forEach(card => {
+                    card.addEventListener('click', function() {
+                        const category = this.getAttribute('data-category');
+                        currentCategory = category;
+                        
+                        // Update category button UI
+                        categoryButtons.forEach(btn => {
+                            if (btn.getAttribute('data-category') === category) {
+                                btn.classList.add('active');
+                            } else {
+                                btn.classList.remove('active');
+                            }
+                        });
+                        
+                        renderFilteredQuotes();
+                    });
+                });
+                
+                // Practice button
+                document.getElementById('start-practice-btn').addEventListener('click', function() {
+                    alert('Starting 10-minute meditation practice...\n\nIn a real app, this would start a guided meditation or timer.');
+                });
+
+                // Media buttons
+                document.getElementById('view-images-btn').addEventListener('click', function() {
+                    switchTab('image-quotes');
+                });
+                
+                document.getElementById('view-videos-btn').addEventListener('click', function() {
+                    switchTab('video-quotes');
+                });
+            }, 800);
+        }
+
+        function renderFilteredQuotes() {
+            showLoader();
+            setTimeout(() => {
+                let filteredQuotes = [...quotes];
+                
+                // Apply category filter
+                if (currentCategory !== 'all') {
+                    filteredQuotes = filteredQuotes.filter(q => q.category === currentCategory);
+                }
+                
+                // Apply search filter if there's a search query
+                const searchQuery = searchInput.value.trim().toLowerCase();
+                if (searchQuery) {
+                    filteredQuotes = filteredQuotes.filter(q => 
+                        q.text.toLowerCase().includes(searchQuery) || 
+                        q.category.toLowerCase().includes(searchQuery)
+                    );
+                }
+                
+                let content = '';
+                
+                if (isSearching) {
+                    content += `
+                        <div class="mb-6 animated-item">
+                            <h2 class="section-title text-xl font-semibold mb-4">Search Results</h2>
+                    `;
+                    
+                    if (filteredQuotes.length === 0) {
+                        content += `
+                            <div class="no-results">
+                                <i class="fas fa-search text-4xl mb-3 text-gray-300"></i>
+                                <p>No quotes found for "${searchQuery}"</p>
+                            </div>
+                        `;
+                    } else {
+                        content += `<div class="grid grid-cols-1 gap-4">`;
+                        filteredQuotes.forEach(quote => {
+                            content += createQuoteCard(quote);
+                        });
+                        content += `</div>`;
+                    }
+                    
+                    content += `</div>`;
+                } else {
+                    // Category title
+                    const categoryTitle = currentCategory === 'all' ? 'All Quotes' : 
+                        currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1) + ' Quotes';
+                    
+                    content += `
+                        <div class="mb-6 animated-item">
+                            <h2 class="section-title text-xl font-semibold mb-4">${categoryTitle}</h2>
+                            <div class="grid grid-cols-1 gap-4">
+                    `;
+                    
+                    filteredQuotes.forEach(quote => {
+                        content += createQuoteCard(quote);
+                    });
+                    
+                    content += `
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                mainContent.innerHTML = content;
+                hideLoader();
+                
+                // Add event listeners to newly created elements
+                addEventListenersToQuoteCards();
+            }, 500);
+        }
+
+        function renderFavorites() {
+            showLoader('favorites');
+            setTimeout(() => {
+                let filteredFavorites = [...favorites];
+                
+                // Apply category filter
+                if (currentCategory !== 'all') {
+                    const favoriteQuotes = quotes.filter(q => favorites.includes(q.id) && q.category === currentCategory);
+                    filteredFavorites = favoriteQuotes.map(q => q.id);
+                }
+                
+                // Apply search filter if there's a search query
+                const searchQuery = searchInput.value.trim().toLowerCase();
+                if (searchQuery) {
+                    const favoriteQuotes = quotes.filter(q => 
+                        favorites.includes(q.id) && 
+                        (q.text.toLowerCase().includes(searchQuery) || q.category.toLowerCase().includes(searchQuery))
+                    );
+                    filteredFavorites = favoriteQuotes.map(q => q.id);
+                }
+                
+                let content = `
+                    <div class="mb-6 animated-item">
+                        <h2 class="section-title text-xl font-semibold mb-4">Favorite Quotes</h2>
+                `;
+                
+                if (filteredFavorites.length === 0) {
+                    content += `
+                        <div class="no-results">
+                            <i class="far fa-heart text-4xl mb-3 text-gray-300"></i>
+                            <p>${isSearching ? 'No matching favorites found' : 'No favorite quotes yet'}</p>
+                            ${isSearching ? '' : '<p class="text-sm text-gray-500 mt-2">Tap the heart icon on any quote to add it to favorites</p>'}
+                        </div>
+                    `;
+                } else {
+                    content += `<div class="grid grid-cols-1 gap-4">`;
+                    
+                    filteredFavorites.forEach(id => {
+                        const quote = quotes.find(q => q.id === id);
+                        if (quote) {
+                            content += createQuoteCard(quote);
+                        }
+                    });
+                    
+                    content += `</div>`;
+                }
+                
+                content += `</div>`;
+                
+                favoritesContainer.innerHTML = content;
+                hideLoader('favorites');
+                
+                // Add event listeners to newly created elements
+                addEventListenersToQuoteCards();
+            }, 500);
+        }
+
+        function renderImageQuotes() {
+            showLoader('image-quotes');
+            setTimeout(() => {
+                let filteredImageQuotes = [...imageQuotes];
+                
+                // Apply category filter
+                if (currentCategory !== 'all') {
+                    filteredImageQuotes = filteredImageQuotes.filter(q => q.category === currentCategory);
+                }
+                
+                // Apply search filter if there's a search query
+                const searchQuery = searchInput.value.trim().toLowerCase();
+                if (searchQuery) {
+                    filteredImageQuotes = filteredImageQuotes.filter(q => 
+                        q.text.toLowerCase().includes(searchQuery) || 
+                        q.category.toLowerCase().includes(searchQuery)
+                    );
+                }
+                
+                let content = '';
+                
+                if (isSearching) {
+                    content += `<h3 class="text-lg font-medium mb-4">Search Results for Image Quotes</h3>`;
+                }
+                
+                if (filteredImageQuotes.length === 0) {
+                    content += `
+                        <div class="no-results">
+                            <i class="far fa-image text-4xl mb-3 text-gray-300"></i>
+                            <p>${isSearching ? 'No matching image quotes found' : 'No image quotes available'}</p>
+                        </div>
+                    `;
+                } else {
+                    filteredImageQuotes.forEach(quote => {
+                        content += `
+                            <div class="image-quote-card animated-item" style="background-image: url('${quote.image}'); background-size: cover; background-position: center;">
+                                <div class="image-quote-overlay">
+                                    <p class="text-white text-lg mb-2">"${quote.text}"</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs text-gray-200">${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</span>
+                                        <div>
+                                            <button class="favorite-btn text-white hover:text-yellow-400 mr-2 ${isFavorite(quote.id) ? 'active' : ''}" data-id="${quote.id}">
+                                                <i class="${isFavorite(quote.id) ? 'fas text-yellow-400' : 'far'} fa-heart"></i>
+                                            </button>
+                                            <button class="share-btn text-white hover:text-blue-300" data-quote="${quote.text}" data-type="image" data-image="${quote.image}">
+                                                <i class="far fa-share-square"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                }
+                
+                imageQuotesContainer.innerHTML = content;
+                hideLoader('image-quotes');
+                
+                // Add event listeners to newly created elements
+                addEventListenersToQuoteCards();
+            }, 500);
+        }
+
+        function renderVideoQuotes() {
+            showLoader('video-quotes');
+            setTimeout(() => {
+                let filteredVideoQuotes = [...videoQuotes];
+                
+                // Apply category filter
+                if (currentCategory !== 'all') {
+                    filteredVideoQuotes = filteredVideoQuotes.filter(q => q.category === currentCategory);
+                }
+                
+                // Apply search filter if there's a search query
+                const searchQuery = searchInput.value.trim().toLowerCase();
+                if (searchQuery) {
+                    filteredVideoQuotes = filteredVideoQuotes.filter(q => 
+                        q.text.toLowerCase().includes(searchQuery) || 
+                        q.category.toLowerCase().includes(searchQuery)
+                    );
+                }
+                
+                let content = '';
+                
+                if (isSearching) {
+                    content += `<h3 class="text-lg font-medium mb-4">Search Results for Video Quotes</h3>`;
+                }
+                
+                if (filteredVideoQuotes.length === 0) {
+                    content += `
+                        <div class="no-results">
+                            <i class="fas fa-video text-4xl mb-3 text-gray-300"></i>
+                            <p>${isSearching ? 'No matching video quotes found' : 'No video quotes available'}</p>
+                        </div>
+                    `;
+                } else {
+                    filteredVideoQuotes.forEach(quote => {
+                        content += `
+                            <div class="animated-item mb-8">
+                                <div class="video-container">
+                                    <video controls playsinline webkit-playsinline poster="${quote.thumbnail}">
+                                        <source src="${quote.videoSrc}" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="video-info">
+                                    <p class="text-lg mb-2">"${quote.text}"</p>
+                                    <p class="text-sm text-gray-500 mb-2">- Premanand Maharaj Ji</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs text-gray-500">${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</span>
+                                        <div>
+                                            <button class="favorite-btn text-gray-500 hover:text-yellow-600 mr-2 ${isFavorite(quote.id) ? 'active' : ''}" data-id="${quote.id}">
+                                                <i class="${isFavorite(quote.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                                            </button>
+                                            <button class="share-btn text-gray-500 hover:text-blue-600" data-quote="${quote.text}" data-type="video" data-video="${quote.videoSrc}" data-thumbnail="${quote.thumbnail}">
+                                                <i class="far fa-share-square"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                }
+                
+                videoQuotesContainer.innerHTML = content;
+                hideLoader('video-quotes');
+                
+                // Add event listeners to newly created elements
+                addEventListenersToQuoteCards();
+            }, 500);
+        }
+
+        function createQuoteCard(quote) {
+            return `
+                <div class="quote-card p-5" data-id="${quote.id}">
+                    <p class="quote-text text-base mb-3">${quote.text}</p>
+                    <p class="text-right text-sm text-gray-600">- Premanand Maharaj Ji</p>
+                    <div class="flex justify-between mt-3">
+                        <span class="text-xs text-gray-500"><i class="fas fa-tag mr-1"></i> ${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</span>
+                        <div>
+                            <button class="favorite-btn text-gray-500 hover:text-yellow-600 mr-2 ${isFavorite(quote.id) ? 'active' : ''}" data-id="${quote.id}">
+                                <i class="${isFavorite(quote.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                            </button>
+                            <button class="share-btn text-gray-500 hover:text-blue-600" data-quote="${quote.text}" data-type="text">
+                                <i class="far fa-share-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quote-details" id="details-${quote.id}">
+                        <p class="text-sm mb-2"><strong>Category:</strong> ${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</p>
+                        <p class="text-sm"><strong>Related Themes:</strong> ${getRelatedThemes(quote.category)}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function addEventListenersToQuoteCards() {
+            // Favorite buttons
+            document.querySelectorAll('.favorite-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const id = parseInt(this.getAttribute('data-id'));
+                    toggleFavorite(id, this);
+                });
+            });
+            
+            // Share buttons
+            document.querySelectorAll('.share-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const quoteText = this.getAttribute('data-quote');
+                    const mediaType = this.getAttribute('data-type');
+                    
+                    let mediaUrl = null;
+                    let thumbnailUrl = null;
+                    
+                    if (mediaType === 'image') {
+                        mediaUrl = this.getAttribute('data-image');
+                    } else if (mediaType === 'video') {
+                        mediaUrl = this.getAttribute('data-video');
+                        thumbnailUrl = this.getAttribute('data-thumbnail');
+                    }
+                    
+                    openShareModal(quoteText, mediaType, mediaUrl, thumbnailUrl);
+                });
+            });
+            
+            // Quote cards (for expanding details)
+            document.querySelectorAll('.quote-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const id = parseInt(this.getAttribute('data-id'));
+                    const detailsElement = document.getElementById(`details-${id}`);
+                    
+                    if (detailsElement) {
+                        detailsElement.classList.toggle('visible');
+                    }
+                });
+            });
+        }
+
+        function toggleFavorite(id, button) {
+            const index = favorites.indexOf(id);
+            
+            if (index === -1) {
+                // Add to favorites
+                favorites.push(id);
+                button.querySelector('i').classList.remove('far');
+                button.querySelector('i').classList.add('fas');
+                
+                // Handle different colored hearts based on where we are
+                if (currentView === 'image-quotes') {
+                    button.querySelector('i').classList.add('text-yellow-400');
+                } else {
+                    button.querySelector('i').classList.add('text-red-500');
+                }
+                
+                button.classList.add('active');
+                showToast('Quote added to favorites');
+            } else {
+                // Remove from favorites
+                favorites.splice(index, 1);
+                button.querySelector('i').classList.remove('fas');
+                
+                if (currentView === 'image-quotes') {
+                    button.querySelector('i').classList.remove('text-yellow-400');
+                } else {
+                    button.querySelector('i').classList.remove('text-red-500');
+                }
+                
+                button.querySelector('i').classList.add('far');
+                button.classList.remove('active');
+                showToast('Quote removed from favorites');
+                
+                // If we're in favorites view, we might need to re-render
+                if (currentView === 'favorites') {
+                    renderFavorites();
+                }
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+
+        function isFavorite(id) {
+            return favorites.includes(id);
+        }
+
+        function showRandomQuote() {
+            // Random from all types of quotes
+            const allQuotes = [...quotes, ...imageQuotes, ...videoQuotes];
+            const randomQuote = allQuotes[Math.floor(Math.random() * allQuotes.length)];
+            
+            // Create a modal-like display for the random quote
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-200';
+            modal.style.zIndex = '200';
+            
+            let modalContent;
+            let mediaType = 'text';
+            let mediaUrl = null;
+            let thumbnailUrl = null;
+            
+            // Check if it's an image quote
+            if (randomQuote.image) {
+                mediaType = 'image';
+                mediaUrl = randomQuote.image;
+                
+                modalContent = document.createElement('div');
+                modalContent.className = 'bg-white dark:bg-gray-800 rounded-lg p-0 m-4 max-w-md overflow-hidden';
+                modalContent.innerHTML = `
+                    <div style="height: 200px; position: relative;">
+                        <img src="${randomQuote.image}" alt="Quote Background" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
+                            <p class="text-white text-lg mb-2">"${randomQuote.text}"</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-right text-sm text-gray-600 mb-4">- Premanand Maharaj Ji</p>
+                        <div class="flex justify-between">
+                            <button class="random-close-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg">Close</button>
+                            <div>
+                                <button class="favorite-btn text-gray-500 hover:text-yellow-600 mr-2 ${isFavorite(randomQuote.id) ? 'active' : ''}" data-id="${randomQuote.id}">
+                                    <i class="${isFavorite(randomQuote.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                                </button>
+                                <button class="share-random-btn text-gray-500 hover:text-blue-600">
+                                    <i class="far fa-share-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } 
+            // Check if it's a video quote
+            else if (randomQuote.videoSrc) {
+                mediaType = 'video';
+                mediaUrl = randomQuote.videoSrc;
+                thumbnailUrl = randomQuote.thumbnail;
+                
+                modalContent = document.createElement('div');
+                modalContent.className = 'bg-white dark:bg-gray-800 rounded-lg p-0 m-4 max-w-md overflow-hidden';
+                modalContent.innerHTML = `
+                    <div style="position: relative;">
+                        <video controls playsinline webkit-playsinline poster="${randomQuote.thumbnail}" style="width: 100%; display: block;">
+                            <source src="${randomQuote.videoSrc}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-lg mb-2">"${randomQuote.text}"</p>
+                        <p class="text-right text-sm text-gray-600 mb-4">- Premanand Maharaj Ji</p>
+                        <div class="flex justify-between">
+                            <button class="random-close-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg">Close</button>
+                            <div>
+                                <button class="favorite-btn text-gray-500 hover:text-yellow-600 mr-2 ${isFavorite(randomQuote.id) ? 'active' : ''}" data-id="${randomQuote.id}">
+                                    <i class="${isFavorite(randomQuote.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                                </button>
+                                <button class="share-random-btn text-gray-500 hover:text-blue-600">
+                                    <i class="far fa-share-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            // Regular text quote
+            else {
+                modalContent = document.createElement('div');
+                modalContent.className = 'bg-white dark:bg-gray-800 rounded-lg p-6 m-4 max-w-md';
+                modalContent.innerHTML = `
+                    <h3 class="text-lg font-bold mb-3">Random Quote</h3>
+                    <p class="text-lg mb-4">"${randomQuote.text}"</p>
+                    <p class="text-right text-sm text-gray-600 mb-4">- Premanand Maharaj Ji</p>
+                    <div class="flex justify-between">
+                        <button class="random-close-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg">Close</button>
+                        <div>
+                            <button class="favorite-btn text-gray-500 hover:text-yellow-600 mr-2 ${isFavorite(randomQuote.id) ? 'active' : ''}" data-id="${randomQuote.id}">
+                                <i class="${isFavorite(randomQuote.id) ? 'fas text-red-500' : 'far'} fa-heart"></i>
+                            </button>
+                            <button class="share-random-btn text-gray-500 hover:text-blue-600">
+                                <i class="far fa-share-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+            
+            // Animation
+            modalContent.style.transform = 'scale(0.9)';
+            modalContent.style.opacity = '0';
+            modalContent.style.transition = 'all 0.3s ease';
+            
+            setTimeout(() => {
+                modalContent.style.transform = 'scale(1)';
+                modalContent.style.opacity = '1';
+            }, 10);
+            
+            // Close button event
+            modal.querySelector('.random-close-btn').addEventListener('click', function() {
+                modalContent.style.transform = 'scale(0.9)';
+                modalContent.style.opacity = '0';
+                
+                setTimeout(() => {
+                    document.body.removeChild(modal);
+                }, 300);
+            });
+            
+            // Favorite button event
+            modal.querySelector('.favorite-btn').addEventListener('click', function() {
+                const id = parseInt(this.getAttribute('data-id'));
+                toggleFavorite(id, this);
+            });
+            
+            // Share button event
+            modal.querySelector('.share-random-btn').addEventListener('click', function() {
+                openShareModal(randomQuote.text, mediaType, mediaUrl, thumbnailUrl);
+                
+                // Close the random quote modal
+                modalContent.style.transform = 'scale(0.9)';
+                modalContent.style.opacity = '0';
+                
+                setTimeout(() => {
+                    document.body.removeChild(modal);
+                }, 300);
+            });
+        }
+
+        function openShareModal(quoteText, mediaType = 'text', mediaUrl = null, thumbnailUrl = null) {
+            currentShareQuote = quoteText;
+            currentShareMediaType = mediaType;
+            currentShareMedia = mediaUrl;
+            
+            // Create the share preview based on media type
+            let previewHTML = '';
+            
+            if (mediaType === 'image' && mediaUrl) {
+                previewHTML = `
+                    <div class="share-preview">
+                        <img src="${mediaUrl}" alt="Quote Image" class="share-preview-image">
+                        <div class="share-preview-text">
+                            "${quoteText}"
+                        </div>
+                        <div class="share-preview-branding">
+                            <img src="https://images.unsplash.com/photo-1598901847919-b95dd0fabde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Logo">
+                            <span>Premanand Maharaj Ji Quotes</span>
+                        </div>
+                    </div>
+                `;
+            } else if (mediaType === 'video' && mediaUrl) {
+                previewHTML = `
+                    <div class="share-preview">
+                        <div class="relative">
+                            <img src="${thumbnailUrl}" alt="Video Thumbnail" class="share-preview-video-thumb">
+                            <div class="video-play-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="share-preview-text">
+                            "${quoteText}"
+                        </div>
+                        <div class="share-preview-branding">
+                            <img src="https://images.unsplash.com/photo-1598901847919-b95dd0fabde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Logo">
+                            <span>Premanand Maharaj Ji Quotes</span>
+                        </div>
+                    </div>
+                `;
+            } else {
+                previewHTML = `
+                    <div class="share-preview">
+                        <div class="share-preview-text">
+                            "${quoteText}"
+                        </div>
+                        <div class="share-preview-branding">
+                            <img src="https://images.unsplash.com/photo-1598901847919-b95dd0fabde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Logo">
+                            <span>Premanand Maharaj Ji Quotes</span>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            sharePreview.innerHTML = previewHTML;
+            
+            // Update fallback message based on media type
+            if (mediaType === 'image') {
+                shareFallbackMessage.innerHTML = `
+                    When you share this quote, the image will be included on platforms that support media sharing. 
+                    For other platforms, a link to view the image quote will be provided.
+                `;
+            } else if (mediaType === 'video') {
+                shareFallbackMessage.innerHTML = `
+                    When you share this quote, the video thumbnail and link will be included on platforms that support media sharing. 
+                    For other platforms, a link to view the video quote will be provided.
+                `;
+            } else {
+                shareFallbackMessage.innerHTML = `
+                    Share this quote on your preferred platform or copy it to share elsewhere.
+                `;
+            }
+            
+            shareModal.classList.add('active');
+        }
+
+        function shareToSocialMedia(platform) {
+            // Get sharing text and URL based on media type
+            let shareText = `"${currentShareQuote}" - Premanand Maharaj Ji`;
+            let shareUrl = 'https://premanandmaharaj.org/quotes';
+            
+            if (currentShareMediaType === 'image') {
+                shareUrl = 'https://premanandmaharaj.org/quotes/image';
+            } else if (currentShareMediaType === 'video') {
+                shareUrl = 'https://premanandmaharaj.org/quotes/video';
+            }
+            
+            // Try to use the Web Share API if available
+            if (navigator.share && (currentShareMediaType === 'text' || platform === 'native')) {
+                let shareData = {
+                    title: 'Premanand Maharaj Ji Quote',
+                    text: shareText,
+                    url: shareUrl
+                };
+                
+                // If we have media and browser supports sharing files
+                if (currentShareMedia && navigator.canShare) {
+                    // For image sharing
+                    if (currentShareMediaType === 'image') {
+                        // In a real app, we would fetch the image and convert to a File
+                        // Here's how it would work:
+                        fetch(currentShareMedia)
+                            .then(response => response.blob())
+                            .then(blob => {
+                                const file = new File([blob], 'quote-image.jpg', { type: 'image/jpeg' });
+                                
+                                if (navigator.canShare({ files: [file] })) {
+                                    shareData.files = [file];
+                                    navigator.share(shareData)
+                                        .then(() => {
+                                            showToast('Quote shared successfully');
+                                            shareModal.classList.remove('active');
+                                        })
+                                        .catch(err => {
+                                            console.error('Error sharing: ', err);
+                                            // Fall back to regular sharing
+                                            navigator.share({
+                                                title: 'Premanand Maharaj Ji Quote',
+                                                text: shareText,
+                                                url: shareUrl
+                                            }).then(() => {
+                                                showToast('Quote shared successfully');
+                                                shareModal.classList.remove('active');
+                                            }).catch(err => {
+                                                console.error('Error sharing: ', err);
+                                                showToast('Unable to share');
+                                            });
+                                        });
+                                } else {
+                                    // Fallback if files can't be shared
+                                    navigator.share({
+                                        title: 'Premanand Maharaj Ji Quote',
+                                        text: shareText,
+                                        url: shareUrl
+                                    }).then(() => {
+                                        showToast('Quote shared successfully');
+                                        shareModal.classList.remove('active');
+                                    }).catch(err => {
+                                        console.error('Error sharing: ', err);
+                                        showToast('Unable to share');
+                                    });
+                                }
+                            })
+                            .catch(err => {
+                                console.error('Error fetching image: ', err);
+                                // Fallback to regular sharing
+                                navigator.share({
+                                    title: 'Premanand Maharaj Ji Quote',
+                                    text: shareText,
+                                    url: shareUrl
+                                }).then(() => {
+                                    showToast('Quote shared successfully');
+                                    shareModal.classList.remove('active');
+                                }).catch(err => {
+                                    console.error('Error sharing: ', err);
+                                    showToast('Unable to share');
+                                });
+                            });
+                    } else {
+                        // For text-only sharing or when we can't handle media
+                        navigator.share(shareData)
+                            .then(() => {
+                                showToast('Quote shared successfully');
+                                shareModal.classList.remove('active');
+                            })
+                            .catch(err => {
+                                console.error('Error sharing: ', err);
+                                showToast('Unable to share');
+                            });
+                    }
+                } else {
+                    // For text-only sharing or when we can't handle media
+                    navigator.share(shareData)
+                        .then(() => {
+                            showToast('Quote shared successfully');
+                            shareModal.classList.remove('active');
+                        })
+                        .catch(err => {
+                            console.error('Error sharing: ', err);
+                            showToast('Unable to share');
+                        });
+                }
+            } else {
+                // Fallback to platform-specific sharing URLs
+                let url = '';
+                const encodedText = encodeURIComponent(shareText);
+                const encodedUrl = encodeURIComponent(shareUrl);
+                
+                switch (platform) {
+                    case 'facebook':
+                        url = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}`;
+                        break;
+                    case 'twitter':
+                        url = `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`;
+                        break;
+                    case 'whatsapp':
+                        url = `https://wa.me/?text=${encodedText}%20${encodedUrl}`;
+                        break;
+                    case 'linkedin':
+                        url = `https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=Premanand%20Maharaj%20Ji%20Quote&summary=${encodedText}`;
+                        break;
+                }
+                
+                if (url) {
+                    window.open(url, '_blank');
+                }
+            }
+        }
+
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add('show-toast');
+            
+            setTimeout(() => {
+                toast.classList.remove('show-toast');
+            }, 2000);
+        }
+
+        function getQuoteOfTheDayId() {
+            // Use the date to generate a consistent quote for the day
+            const today = new Date();
+            const dayOfYear = getDayOfYear(today);
+            return quotes[dayOfYear % quotes.length].id;
+        }
+
+        function getDayOfYear(date) {
+            const start = new Date(date.getFullYear(), 0, 0);
+            const diff = date - start;
+            const oneDay = 1000 * 60 * 60 * 24;
+            return Math.floor(diff / oneDay);
+        }
+
+        function getRelatedThemes(category) {
+            const themeMap = {
+                'spirituality': 'Self-realization, Divine connection, Soul',
+                'meditation': 'Mindfulness, Awareness, Concentration',
+                'peace': 'Harmony, Serenity, Calmness',
+                'devotion': 'Surrender, Faith, Dedication',
+                'knowledge': 'Wisdom, Understanding, Learning',
+                'truth': 'Reality, Honesty, Authenticity',
+                'happiness': 'Joy, Contentment, Bliss',
+                'service': 'Selflessness, Charity, Helping',
+                'love': 'Compassion, Affection, Care'
+            };
+            
+            return themeMap[category] || 'Wisdom, Spirituality, Life';
+        }
+
+        function showLoader(section = 'main') {
+            if (section === 'main') {
+                mainLoader.style.display = 'block';
+            } else if (section === 'favorites') {
+                favoritesLoader.style.display = 'block';
+            } else if (section === 'image-quotes') {
+                imageQuotesLoader.style.display = 'block';
+            } else if (section === 'video-quotes') {
+                videoQuotesLoader.style.display = 'block';
+            }
+        }
+
+        function hideLoader(section = 'main') {
+            if (section === 'main') {
+                mainLoader.style.display = 'none';
+            } else if (section === 'favorites') {
+                favoritesLoader.style.display = 'none';
+            } else if (section === 'image-quotes') {
+                imageQuotesLoader.style.display = 'none';
+            } else if (section === 'video-quotes') {
+                videoQuotesLoader.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
